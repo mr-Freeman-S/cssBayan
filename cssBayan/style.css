@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+img {
+    visibility: collapse;
+    height: 0;
+}
+input:checked ~ img {
+    visibility: visible;
+    height: 50px;
+
+}
