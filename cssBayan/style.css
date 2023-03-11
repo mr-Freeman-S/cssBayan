@@ -5,12 +5,40 @@ body{
     align-items: center;
     background-color: bisque;
 }
+input {
+    visibility: hidden;
+}
+ul{
+    padding: 0;
+    width: 25em;
+}
+label{
+    width: 100%;
+}
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 img {
-    visibility: collapse;
+    visibility: hidden;
     height: 0;
+    transition: 1s;
+    margin: auto auto;
+    display: flex;
 }
 input:checked ~ img {
     visibility: visible;
-    height: 50px;
+    height: 15em;
+}
 
+li.tab:hover img {
+    visibility: visible;
+    height: 15em;
 }
