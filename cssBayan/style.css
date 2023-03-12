@@ -18,7 +18,10 @@ ul {
 label {
     width: 100%;
 }
-
+.svg-icon {
+    transform: rotate(45deg);
+    transition: .5s;
+}
 .title-wrapper {
     display: flex;
     justify-content: space-between;
@@ -55,6 +58,15 @@ ul:hover {
     color: cadetblue;
 }
 
-input:checked ~ div {
+li.tab:hover .svg-icon {
+    fill: cadetblue;
+    transform: rotate(360deg);
+}
+input:checked ~ div span {
     color: black;
 }
+.input-radio:checked ~ .svg-icon {
+    fill: black;
+}
+
+
